@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogs</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #fff; }
+        .navbar { background: #e0e0e0; padding: 10px 0; display: flex; align-items: center; justify-content: space-between; }
+        .navbar .site-name { margin-left: 20px; font-weight: bold; }
+        .navbar .links { margin-right: 20px; }
+    .navbar .links a { margin: 0 8px; color: #0074cc; text-decoration: underline; }
+        .navbar .cart { margin-right: 40px; }
+        h2 { text-align: center; margin-top: 30px; }
+        .news-section { width: 90%; margin: 30px auto; }
+        .news-box { background: #e0e0e0; display: flex; justify-content: space-between; align-items: stretch; margin-bottom: 30px; padding: 20px; border-radius: 6px; }
+        .news-info { flex: 1; }
+        .news-title { font-size: 1.5em; font-weight: bold; margin-bottom: 10px; }
+        .news-desc { margin-bottom: 20px; }
+        .news-img { flex: 1; display: flex; align-items: center; justify-content: center; }
+        .img-placeholder { width: 90%; height: 180px; border: 2px solid #888; background: #fafafa; display: flex; align-items: center; justify-content: center; font-size: 1.2em; color: #888; }
+        .news-btn { margin-top: 10px; }
+        .news-btn button { padding: 10px 30px; font-size: 1em; border: 1px solid #333; background: #fff; cursor: pointer; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span class="site-name">Site Name</span>
+        <div class="links" style="display: flex; justify-content: center; width: 100%;">
+            <a href="home_index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="cart.html" class="cart-btn" style="text-decoration:none; color:inherit;">🛒 Cart (0)</a>
+        </div>
+    </div>
+    <h2>NOTICIAS IMPORTANTES</h2>
+    <div class="news-section">
+        <div class="news-box">
+            <div class="news-info">
+                <div class="news-title">CASO CURIOSO #1</div>
+                <div class="news-desc">Our North American Field Guides provide tips for identifying birds in all of the regions of the United States and Canada. Download any of our guides for free now!</div>
+                <div class="news-btn"><button>VER CASO</button></div>
+            </div>
+            <div class="news-img">
+                <div class="img-placeholder">Imagen</div>
+            </div>
+        </div>
+        <div class="news-box">
+            <div class="news-info">
+                <div class="news-title">CASO CURIOSO #2</div>
+                <div class="news-desc">Our North American Field Guides provide tips for identifying birds in all of the regions of the United States and Canada. Download any of our guides for free now!</div>
+                <div class="news-btn"><button>VER CASO</button></div>
+            </div>
+            <div class="news-img">
+                <div class="img-placeholder">Imagen</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

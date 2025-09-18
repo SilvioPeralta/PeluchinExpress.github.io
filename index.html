@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>peluches express</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff;
+        }
+        .container {
+            margin: 20px;
+            background: #fff;
+        }
+        header {
+            background: #ddd;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #222;
+        }
+        .site-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        nav {
+            margin-left: 30px;
+        }
+        nav a {
+            margin: 0 8px;
+            color: #0074cc;
+            text-decoration: underline;
+        }
+        .cart {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1em;
+        }
+        .main-section {
+            display: flex;
+            background: #eee;
+            margin: 30px;
+            padding: 30px;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        .main-info {
+            flex: 1;
+        }
+        .main-info h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .main-info p {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .main-info .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            border: none;
+            padding: 10px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main-image {
+            flex: 1;
+            min-width: 350px;
+            background: #fff;
+            border: none;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-image::before {
+            content: "";
+            display: block;
+            width: 30%;
+            height: 42%;
+            border: none;
+            background: none;
+            position: absolute;
+        }
+        .user-links {
+            text-align: right;
+            margin: 0 30px 10px 0;
+        }
+        .user-links a {
+            color: #0074cc;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 30px;
+        }
+        .product-card {
+            background: #eee;
+            border: 2px solid #bbb;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-img {
+            width: 90%;
+            height: 90px;
+            border: 2px solid #222;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        .product-title {
+            color: #0074cc;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+        .product-attr {
+            font-size: 0.95em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .product-price {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        footer {
+            border-top: 2px solid #222;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            font-size: 0.95em;
+        }
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .footer-categories a {
+            margin: 0 6px;
+            color: #0074cc;
+            text-decoration: underline;
+        }
+        .footer-payments img {
+            height: 22px;
+            margin-right: 4px;
+        }
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .newsletter-input {
+            padding: 4px 8px;
+            border: 1px solid #bbb;
+            font-size: 1em;
+        }
+        .newsletter-btn {
+            padding: 4px 12px;
+            background: #888;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        @media (max-width: 900px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .main-section {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 600px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            header, footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="site-title">
+                <span style="font-size:1.5em;">&#9632;</span>
+                Site Name
+            </div>
+            <nav>
+                <a href="#">Home</a> |
+                <a href="productos.html">Productos</a> |
+                <a href="nosotros.html">Nosotros</a> |
+                <a href="blogs.html">Blogs</a> |
+                <a href="contacto.html">Contacto</a>
+                
+            </nav>
+            <div class="cart">
+                <button class="cart-btn" onclick="window.location.href='cart.html'">
+                    <span style="font-size:1.3em;">&#128722;</span>
+                    Cart (3)
+                </button>
+            </div>
+        </header>
+        <div class="user-links">
+            <a href="login.html">Iniciar sesión</a> |
+            <a href="registro.html">Registrar usuario</a>
+        </div>
+        <section class="main-section">
+            <div class="main-info">
+                <h1>TIENDA ONLINE</h1>
+                <p>
+                    Our North American Field Guides provide tips for identifying birds in all of the regions of the United States and Canada. Download any of our guides for free now!
+                </p>
+                <a href="#" class="btn">
+                    <span style="font-size:1.2em;">&#128190;</span>
+                    ver productos
+                </a>
+                <script>
+                document.querySelectorAll('.btn').forEach(function(btn){
+                    btn.addEventListener('click', function(e){
+                        e.preventDefault();
+                        window.location.href = 'productos.html';
+                    });
+                });
+                </script>
+                </a>
+            </div>
+            <div class="main-image">
+                <!-- Imagen principal (placeholder) -->
+                <svg width="100%" height="100%" viewBox="0 0 300 180">
+                    <rect x="0" y="0" width="300" height="180" fill="none" stroke="#222" stroke-width="2"/>
+                    <line x1="0" y1="0" x2="300" y2="180" stroke="#222" stroke-width="2"/>
+                    <line x1="300" y1="0" x2="0" y2="180" stroke="#222" stroke-width="2"/>
+                </svg> 
+            </div>
+        </section>
+        <section class="products-grid" id="contenedor">
+            <!-- ***producto de ejemplo -->
+        </section>
+
+            <script>
+                for (let i = 0; i < 20; i++) {
+            document.getElementById("contenedor").innerHTML += `
+                <div class="product-card">
+                    <div class="product-img">
+                        <svg width="100%" height="100%" viewBox="0 0 100 60">
+                            <rect x="0" y="0" width="100" height="60" fill="none" stroke="#222" stroke-width="2"/>
+                            <line x1="0" y1="0" x2="100" y2="60" stroke="#222" stroke-width="2"/>
+                            <line x1="100" y1="0" x2="0" y2="60" stroke="#222" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="product-title">Product Title</div>
+                    <div class="product-attr">Attributes</div>
+                    <div class="product-price">$00.00</div>
+                </div>
+            `;
+        }
+                            
+            </script>
+        <footer>
+            <div class="footer-left">
+                <span>Site Name</span>
+                <span class="footer-categories">
+                    <a href="#">Category X</a> |
+                    <a href="#">Category Y</a> |
+                    <a href="#">Category Z</a>
+                </span>
+                <span class="footer-payments">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Discover_Card_logo.png" alt="Discover">
+                </span>
+            </div>
+            <div class="footer-right">
+                <span>Stay In Touch Join our Newsletter.</span>
+                <input type="email" class="newsletter-input" placeholder="Enter Email">
+                <button class="newsletter-btn">Subscribe</button>
+            </div>
+        </footer>
+    </div>
+</body>

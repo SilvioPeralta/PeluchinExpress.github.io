@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de usuario</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #fff; }
+        .navbar { background: #e0e0e0; padding: 10px 0; display: flex; align-items: center; justify-content: space-between; }
+        .navbar .site-name { margin-left: 20px; font-weight: bold; }
+        .navbar .links { margin-right: 20px; }
+    .navbar .links a { margin: 0 8px; color: #0074cc; text-decoration: underline; }
+        .navbar .cart { margin-right: 40px; }
+        .register-form-container { display: flex; justify-content: center; margin-top: 60px; }
+        .register-form { background: #e0e0e0; border-radius: 6px; width: 500px; padding: 30px 30px 30px 30px; box-sizing: border-box; }
+        .form-title { background: #ccc; text-align: left; font-weight: bold; padding: 10px; border-radius: 6px 6px 0 0; margin-bottom: 20px; }
+        .form-group { margin-bottom: 18px; }
+        .form-label { display: block; font-size: 1em; margin-bottom: 6px; }
+        .form-input { width: 100%; padding: 8px; border: 1px solid #888; border-radius: 4px; font-size: 1em; }
+        .form-row { display: flex; gap: 10px; margin-bottom: 18px; }
+        .form-select { width: 100%; padding: 8px; border: 1px solid #888; border-radius: 4px; font-size: 1em; }
+        .form-btn-container { display: flex; justify-content: center; }
+        .form-btn { padding: 10px 40px; font-size: 1em; border: 1px solid #333; background: #fff; cursor: pointer; border-radius: 4px; }
+        @media (max-width: 600px) {
+            .register-form { width: 95%; padding: 10px; }
+            .form-row { flex-direction: column; gap: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span class="site-name">Site Name</span>
+        <div class="links" style="display: flex; justify-content: center; width: 100%;">
+            <a href="home_index.html">Home</a>
+            <a href="productos.html">Productos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="cart.html" class="cart-btn" style="text-decoration:none; color:inherit;">🛒 Cart (0)</a>
+        </div>
+            </span>
+    </div>
+    <div class="register-form-container">
+        <form class="register-form">
+            <div class="form-title">Registro de usuario</div>
+            <div class="form-group">
+                <label class="form-label" for="nombre">NOMBRE COMPLETO</label>
+                <input class="form-input" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="correo">CORREO</label>
+                <input class="form-input" type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="correo2">CORREO</label>
+                <input class="form-input" type="email" id="correo2" name="correo2" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="password">CONTRASEÑA</label>
+                <input class="form-input" type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="password2">CONFIRMAR CONTRASEÑA</label>
+                <input class="form-input" type="password" id="password2" name="password2" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="telefono">TELEFONO (opcional)</label>
+                <input class="form-input" type="text" id="telefono" name="telefono">
+            </div>
+            <div class="form-row">
+                <select class="form-select" name="region" required>
+                    <option value="">-- Seleccione la región --</option>
+                    <option>Región Metropolitana de Santiago</option>
+                    <option>Región de la Araucanía</option>
+                    <option>Región de Ñuble</option>
+                </select>
+                <select class="form-select" name="comuna" required>
+                    <option value="">-- Seleccione la comuna --</option>
+                    <option>Linares</option>
+                    <option>Longaví</option>
+                    <option>Concepción</option>
+                </select>
+            </div>
+            <div class="form-btn-container">
+                <button class="form-btn" type="submit">REGISTRAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

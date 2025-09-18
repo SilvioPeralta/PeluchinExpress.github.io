@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #fff; }
+        .navbar { background: #e0e0e0; padding: 10px 0; display: flex; align-items: center; justify-content: space-between; }
+        .navbar .site-name { margin-left: 20px; font-weight: bold; }
+    .navbar .links { margin-right: 20px; justify-content: center; }
+    .navbar .links a { margin: 0 8px; color: #0074cc; text-decoration: underline; }
+        .navbar .cart { margin-right: 40px; }
+        h2 { text-align: center; margin-top: 30px; }
+        .products-section { width: 95%; margin: 30px auto; }
+        .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .product-card { background: #e0e0e0; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; }
+        .img-placeholder { width: 90%; height: 120px; border: 2px solid #888; background: #fafafa; display: flex; align-items: center; justify-content: center; font-size: 1.2em; color: #888; margin-bottom: 10px; }
+        .product-title { color: #3498db; text-align: center; margin-bottom: 5px; }
+        .product-price { text-align: center; margin-bottom: 8px; }
+        .add-btn { padding: 6px 24px; font-size: 1em; border: 1px solid #333; background: #fff; cursor: pointer; border-radius: 4px; }
+        @media (max-width: 900px) {
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .products-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span class="site-name">Site Name</span>
+            <div class="links" style="display: flex; justify-content: center; width: 100%;">
+                <a href="home_index.html">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="cart.html" class="cart-btn" style="text-decoration:none; color:inherit;">🛒 Cart (0)</a>
+            </div>
+    </div>
+    <h2>PRODUCTOS</h2>
+    <div class="products-section">
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+            <div class="product-card">
+                <div class="img-placeholder">Imagen</div>
+                <div class="product-title">Product Title</div>
+                <div class="product-price">$1000</div>
+                <button class="add-btn">Añadir</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
