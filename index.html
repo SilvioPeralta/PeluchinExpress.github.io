@@ -250,29 +250,10 @@
                 </svg> 
             </div>
         </section>
-        <section class="products-grid" id="contenedor">
-            <!-- ***producto de ejemplo -->
-        </section>
+        <div class="products-section">
+            <div class="products-grid" id="contenedor"></div>
+        </div>
 
-            <script>
-                for (let i = 0; i < 20; i++) {
-            document.getElementById("contenedor").innerHTML += `
-                <div class="product-card">
-                    <div class="product-img">
-                        <svg width="100%" height="100%" viewBox="0 0 100 60">
-                            <rect x="0" y="0" width="100" height="60" fill="none" stroke="#222" stroke-width="2"/>
-                            <line x1="0" y1="0" x2="100" y2="60" stroke="#222" stroke-width="2"/>
-                            <line x1="100" y1="0" x2="0" y2="60" stroke="#222" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <div class="product-title">Product Title</div>
-                    <div class="product-attr">Attributes</div>
-                    <div class="product-price">$00.00</div>
-                </div>
-            `;
-        }
-                            
-            </script>
         <footer>
             <div class="footer-left">
                 <span>Site Name</span>
@@ -294,4 +275,5 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
