@@ -112,7 +112,7 @@ if (document.getElementById("contenedor")) {
             <div class="card-body text-center">
                 <h5 class="product-title card-title">${prod.nombre}</h5>
                 <p class="product-price card-text">$${prod.precio.toLocaleString()}</p>
-                <button class="btn btn-success add-btn" data-index="${i}">Agregar</button>
+                <button class="btn btn-success btn-agregar add-btn" data-index="${i}">Agregar</button>
             </div>
         </div>
         `;
@@ -130,7 +130,7 @@ if (document.getElementById("productos-list")) {
             <div class="card-body text-center">
                 <h5 class="product-title card-title">${prod.nombre}</h5>
                 <p class="product-price card-text">$${prod.precio.toLocaleString()}</p>
-                <button class="btn btn-success add-btn" data-index="${i}">Agregar</button>
+                <button class="btn btn-success btn-agregar add-btn" data-index="${i}">Agregar</button>
             </div>
         </div>
         `;

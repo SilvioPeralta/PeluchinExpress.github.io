@@ -1,3 +1,7 @@
+/* Cambia el color del texto del botón Agregar a negro */
+.btn-agregar {
+    color: #000 !important;
+}
 /* Reset básico */
 body {
     font-family: Arial, sans-serif;
