@@ -3,107 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Carrito de compras</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #fff; }
-        .navbar { background: #e0e0e0; padding: 10px 0; display: flex; align-items: center; justify-content: space-between; }
-        .navbar .site-name { margin-left: 20px; font-weight: bold; }
-        .navbar .links { margin-right: 20px; }
-    .navbar .links a { margin: 0 8px; color: #0074cc; text-decoration: underline; }
-        .navbar .cart { margin-right: 40px; }
-        .navbar .cart-btn { background: none; border: none; font-size: 1em; cursor: pointer; color: #0074cc; }
-        .cart-container { display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; margin: 40px 5% 0 5%; }
-        .cart-items { flex: 2; }
-        .cart-title { font-size: 1.7em; margin-bottom: 30px; }
-        .cart-product { display: flex; align-items: center; margin-bottom: 25px; }
-        .cart-img { width: 80px; height: 80px; border: 2px solid #888; background: #fafafa; display: flex; align-items: center; justify-content: center; font-size: 1.2em; color: #888; margin-right: 20px; }
-        .cart-info { flex: 1; }
-        .cart-name { font-weight: bold; font-size: 1.1em; }
-        .cart-desc { font-size: 0.95em; color: #444; }
-        .cart-price { font-size: 1.1em; font-weight: bold; margin-left: 20px; }
-        .cart-qty { display: flex; align-items: center; margin-left: 20px; }
-        .qty-btn { background: none; border: none; font-size: 1.2em; margin: 0 5px; cursor: pointer; }
-        .cart-summary { flex: 1; border-left: 2px solid #888; padding-left: 30px; }
-        .summary-title { font-size: 1.2em; margin-bottom: 20px; }
-        .summary-total { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; }
-        .summary-coupon { margin-bottom: 15px; }
-        .summary-coupon input { padding: 6px; width: 70%; border: 1px solid #888; border-radius: 4px; }
-        .summary-coupon button { padding: 6px 12px; border: 1px solid #888; background: #eee; cursor: pointer; border-radius: 4px; }
-        .summary-pay-btn { width: 100%; padding: 12px 0; background: #19b119; color: #fff; font-size: 1.2em; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
-        @media (max-width: 900px) {
-            .cart-container { flex-direction: column; }
-            .cart-summary { border-left: none; padding-left: 0; margin-top: 30px; }
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <span class="site-name">Site Name</span>
-        <span class="links">
-            <a href="index.html">Home</a>
-            <a href="productos.html">Productos</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="blogs.html">Blogs</a>
-            <a href="contacto.html">Contacto</a>
-        </span>
-        <span class="cart">
-            <button class="cart-btn" onclick="window.location.href='cart.html'">
-                <span style="font-size:1.3em;">&#128722;</span>
-                Cart (3)
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Peluches Express</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </span>
-    </div>
-    <div class="cart-container">
-        <div class="cart-items">
-            <div class="cart-title">Mi carrito de compras</div>
-            <div class="cart-product">
-                <div class="cart-img">IMG</div>
-                <div class="cart-info">
-                    <div class="cart-name">Producto #1</div>
-                    <div class="cart-desc">Pink lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-                </div>
-                <div class="cart-price">$ 8.000</div>
-                <div class="cart-qty">
-                    <button class="qty-btn">-</button>
-                    <input type="text" value="1" style="width:30px;text-align:center;" readonly>
-                    <button class="qty-btn">+</button>
-                </div>
-            </div>
-            <div class="cart-product">
-                <div class="cart-img">IMG</div>
-                <div class="cart-info">
-                    <div class="cart-name">Producto #2</div>
-                    <div class="cart-desc">Pink lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-                </div>
-                <div class="cart-price">$ 6.000</div>
-                <div class="cart-qty">
-                    <button class="qty-btn">-</button>
-                    <input type="text" value="1" style="width:30px;text-align:center;" readonly>
-                    <button class="qty-btn">+</button>
-                </div>
-            </div>
-            <div class="cart-product">
-                <div class="cart-img">IMG</div>
-                <div class="cart-info">
-                    <div class="cart-name">Producto #3</div>
-                    <div class="cart-desc">Pink lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
-                </div>
-                <div class="cart-price">$ 10.000</div>
-                <div class="cart-qty">
-                    <button class="qty-btn">-</button>
-                    <input type="text" value="1" style="width:30px;text-align:center;" readonly>
-                    <button class="qty-btn">+</button>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cart.html">
+                            🛒 Carrito <span id="cart-count" class="badge bg-primary">0</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="cart-summary">
-            <div class="summary-title">TOTAL:</div>
-            <div class="summary-total">$ 24.000</div>
-            <div class="summary-coupon">
-                <input type="text" placeholder="Ingrese el cupón de descuento">
-                <button>APLICAR</button>
-            </div>
-            <button class="summary-pay-btn">PAGAR</button>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="mb-4">Tu carrito</h2>
+        <div id="cart-items"></div>
+        <div class="mt-4">
+            <h4>Total: $<span id="cart-total">0</span></h4>
+            <button class="btn btn-success" id="checkout-btn">Finalizar compra</button>
+            <button class="btn btn-danger" id="clear-cart-btn">Vaciar carrito</button>
         </div>
+        <div id="cart-message" class="alert alert-success mt-3 d-none"></div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
